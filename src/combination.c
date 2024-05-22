@@ -1,6 +1,7 @@
 // INCLUDES
 
 #include "permutation.c"
+#include "combination.h"
 
 // COMBINATION FUNCTION
 

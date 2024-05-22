@@ -1,3 +1,7 @@
+// INCLUDES
+
+#include "factorial.h"
+
 // FACTORIAL FUNCTION
 
 float factorial(float x){

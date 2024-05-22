@@ -1,6 +1,7 @@
 // INCLUDES
 
 #include "factorial.c"
+#include "permutation.h"
 
 // PERMUTATION EQUATION
 
