@@ -4,7 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include "combination.c"
+#include "comb.c"
+#include "exp.c"
+#include "percof.c"
 
 // CHECK COMMAND
 
@@ -31,14 +33,20 @@ float cmd(char *list[]){
 	if(cmp_cmd(list, "div")){
 		x = atof(list[2]) / atof(list[3]);
 	}
+	if(cmp_cmd(list, "exp")){
+		x = expo(atof(list[2]), atof(list[3]));
+	}
+	if(cmp_cmd(list, "percof")){
+		x = percof(atof(list[2]), atof(list[3]));
+	}
 	if(cmp_cmd(list, "fact")){
-		x = factorial(atof(list[2]));
+		x = fact(atof(list[2]));
 	}
 	if(cmp_cmd(list, "perm")){
-		x = permutation(atof(list[2]), atof(list[3]));
+		x = perm(atof(list[2]), atof(list[3]));
 	}
 	if(cmp_cmd(list, "comb")){
-		x = combination(atof(list[2]), atof(list[3]));
+		x = comb(atof(list[2]), atof(list[3]));
 	}
 	return x;
 }
@@ -48,4 +56,5 @@ float cmd(char *list[]){
 int main(int argc, char *argv[]){
 	float x = cmd(argv);
 	printf("%f", x);
+	printf("\n");
 }

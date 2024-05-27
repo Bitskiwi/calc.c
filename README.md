@@ -15,6 +15,9 @@ wide usage command based calculator app with features from addition to permutati
 - `div`
   - divide two numbers
   - `./calc div 3 3 >>> 1`
+- `percof`
+    - find what percentage a number is of another number
+    - `./calc percof 3 3 >>> 100`
 - `fact`
   - find the factorial of a number
   - `./calc fact 3 >>> 6`

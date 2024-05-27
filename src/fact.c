@@ -1,10 +1,10 @@
 // INCLUDES
 
-#include "factorial.h"
+#include "fact.h"
 
 // FACTORIAL FUNCTION
 
-float factorial(float x){
+float fact(float x){
 	float f = 1;
 	while(x != 0){
 		f *= x;
