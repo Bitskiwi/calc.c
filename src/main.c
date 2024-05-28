@@ -7,6 +7,7 @@
 #include "comb.c"
 #include "exp.c"
 #include "percof.c"
+#include "rand.c"
 
 // CHECK COMMAND
 
@@ -38,6 +39,9 @@ float cmd(char *list[]){
 	}
 	if(cmp_cmd(list, "percof")){
 		x = percof(atof(list[2]), atof(list[3]));
+	}
+	if(cmp_cmd(list, "rand")){
+		x = rando(atof(list[2]), atof(list[3]));
 	}
 	if(cmp_cmd(list, "fact")){
 		x = fact(atof(list[2]));

@@ -15,6 +15,14 @@ wide usage command based calculator app with features from addition to permutati
 - `div`
   - divide two numbers
   - `./calc div 3 3 >>> 1`
+- `exp`
+    - find the value of a number after applying an exponent
+    - `./calc exp 3 3 >>> 27`
+- `rand`
+    - generate a random number within a certain range
+    - `./calc rand 1 10 >>> 6.1346`
+    - `./calc rand 1 10 >>> 3.2342`
+    - `./calc rand 1 10 >>> 5.3254`
 - `percof`
     - find what percentage a number is of another number
     - `./calc percof 3 3 >>> 100`
